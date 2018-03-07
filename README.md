@@ -4,6 +4,7 @@
 
 ### Usage
 
+#### Start Minikube
 ```
 minikube start
 ```
@@ -18,7 +19,7 @@ $ docker push nhatthai/greeting-service:latest
 #### Start Greeting Service
 ```
 $ cd greeting-service
-$ kubectl manifests/greeting-service
+$ kubectl manifests/greeting-service.yml
 ```
 
 #### Build and push image
@@ -31,7 +32,7 @@ $ docker push nhatthai/name-service:latest
 #### Start Name Service
 ```
 $ cd name-service
-$ kubectl manifests/name-service
+$ kubectl manifests/name-service.yml
 ```
 
 #### Run Greeting Service
